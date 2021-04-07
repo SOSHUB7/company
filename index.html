@@ -33,14 +33,16 @@ body, html {
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
+  <div class="w3-bar w3-text-white w3-card" id="myNavbar" style="background: rgba(16,16,16, 0.9)!important;">
     <a href="#home" class="w3-bar-item w3-button w3-wide">
       <img class="w3-image w3-round-large" src="https://soshub7.github.io/soshub/images/logo.png" alt="Buildings" width="30" height="auto"></a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
-      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
+      <a href="#terms" class="w3-bar-item w3-button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ui-checks" viewBox="0 0 16 16" style="position:relative;top: 3px!important;">
+        <path d="M7 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1zM2 1a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm0 8a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2H2zm.854-3.646a.5.5 0 0 1-.708 0l-1-1a.5.5 0 1 1 .708-.708l.646.647 1.646-1.647a.5.5 0 1 1 .708.708l-2 2zm0 8a.5.5 0 0 1-.708 0l-1-1a.5.5 0 0 1 .708-.708l.646.647 1.646-1.647a.5.5 0 0 1 .708.708l-2 2zM7 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1zm0-5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+      </svg> TERMS</a>
+      <a href="#privacy" class="w3-bar-item w3-button"><i class="fa fa-shield"></i> PRIVACY</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -55,234 +57,392 @@ body, html {
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+  <a href="#terms" onclick="w3_close()" class="w3-bar-item w3-button">TERMS</a>
+  <a href="#privacy" onclick="w3_close()" class="w3-bar-item w3-button">PRIVACY</a>
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
 </nav>
 
 <!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+<header class="bgimg-1 w3-display-container w3-black w3-grayscale-min" id="home">
   <div class="w3-display-left w3-text-white" style="padding:48px">
     <span class="w3-jumbo w3-hide-small">Discover Your Talent and Grow.</span><br>
     <span class="w3-xxlarge w3-hide-large w3-hide-medium">Discover Your Talent and Grow.</span><br>
     <span class="w3-large">Stop wasting valuable time looking for people of your kind you probably won't find.</span>
     <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Join SOSHUB</a></p>
   </div> 
-  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 28px; bottom: -120px;">
+    <div class="w3-row">
+      <div class="w3-col w3-margin s2 w3-green w3-center">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      </div>
+      <div class="w3-col w3-margin s2 w3-green w3-center">
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+      </div>
+      <div class="w3-col w3-margin s2 w3-green w3-center">
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+      </div>
+      <div class="w3-col w3-margin s2 w3-green w3-center">
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      </div>
+      <div class="w3-col w3-margin s2 w3-green w3-center">
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+      </div>
+      <div class="w3-col w3-margin s2 w3-green w3-center">
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+      </div>
+    </div>
   </div>
+  
 </header>
 
 <!-- About Section -->
-<div class="w3-container" style="padding:128px 16px" id="about">
-  <h3 class="w3-center">ABOUT THE COMPANY</h3>
-  <p class="w3-center w3-large">Key features of our company</p>
+<div class="w3-container w3-black" style="padding:128px 16px;" id="about">
+  <h3 class="w3-center">ABOUT SOSHUB</h3>
+
   <div class="w3-row-padding w3-center" style="margin-top:64px">
-    <div class="w3-quarter">
-      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-      <p class="w3-large">Responsive</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Passion</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Design</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Support</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-  </div>
+    SOSHUB is a social network where people can discover their
+hidden talents and grow them to a professional level through
+knowledge sharing and inspirations. Every industry or set of
+talents represented by a Hub, a community for people with
+similar values.
 </div>
 
-<!-- Promo Section - "We know design" -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px">
-  <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <h3>We know design.</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
-      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
-    </div>
-    <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="/w3images/phone_buildings.jpg" alt="Buildings" width="700" height="394">
-    </div>
-  </div>
-</div>
+
 
 <!-- Team Section -->
-<div class="w3-container" style="padding:128px 16px" id="team">
-  <h3 class="w3-center">THE TEAM</h3>
-  <p class="w3-center w3-large">The ones who runs this company</p>
-  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="/w3images/team2.jpg" alt="John" style="width:100%">
-        <div class="w3-container">
-          <h3>John Doe</h3>
-          <p class="w3-opacity">CEO & Founder</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-        <div class="w3-container">
-          <h3>Anja Doe</h3>
-          <p class="w3-opacity">Art Director</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
-        <div class="w3-container">
-          <h3>Mike Ross</h3>
-          <p class="w3-opacity">Web Designer</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
-        <div class="w3-container">
-          <h3>Dan Star</h3>
-          <p class="w3-opacity">Designer</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="w3-container w3-black" style="padding:128px 16px;line-height: 2.6;" id="terms">
+  <h3 class="w3-center">TERMS</h3>
+  <p class="w3-center w3-large">SOSHUB Inc. Terms of Service (Effective: February 28, 2021)</p>
+  <br>
+
+                    <h5 class="text-center padding-top-half">Welcome!</h5>
+
+                    We’ve drafted these Terms of Service (which we call the “Terms”) so you’ll know the rules that govern our relationship with you. Although we have tried our best to strip the legalese from the Terms, there are places where these Terms may still read like a traditional contract.
+                    <br>
+                    There’s a good reason for that:
+                    <br>
+                    These Terms do indeed form a legally binding contract between you and SOSHUB Inc. So please read them carefully.
+
+                    <br>
+
+                    By using SOSHUB or any of our other products or services that link to these Terms (we refer to these collectively as the “Services”), you agree to the Terms. Of course, if you don’t agree with them, then don’t use the Services.
+
+                    <br>
+
+                    ARBITRATION NOTICE: THESE TERMS CONTAIN AN ARBITRATION CLAUSE A LITTLE LATER ON. EXCEPT FOR CERTAIN TYPES OF DISPUTES MENTIONED IN THAT ARBITRATION CLAUSE, YOU AND SOSHUB Inc. AGREE THAT DISPUTES BETWEEN US WILL BE RESOLVED BY MANDATORY BINDING ARBITRATION, AND YOU AND SOSHUB Inc. WAIVE ANY RIGHT TO PARTICIPATE IN A CLASS-ACTION LAWSUIT OR CLASS-WIDE ARBITRATION.
+
+                    <br>
+
+                    1. Who Can Use the Services
+                    <br>
+                    No one under 18 is allowed to create an account or use the Services. We may offer additional Services with additional terms that may require you to be even older to use them. So please read all terms carefully.
+
+                    <br>
+
+                    By using the Services, you state that:
+
+                    <br>
+
+                    You can form a binding contract with SOSHUB Inc.
+
+                    <br>
+                    You are not a person who is barred from receiving the Services under the laws of the Tanzania or any other applicable jurisdiction—including, for example, that you do not appear on the Tanzania. Treasury Department’s list of Specially Designated Nationals or face any other similar prohibition.
+
+                    <br>
+
+                    You are not a convicted sex offender.
+
+                    <br>
+
+                    You will comply with these Terms and all applicable local, state, national, and international laws, rules, and regulations.
+
+                    <br>
+
+                    If you are using the Services on behalf of a business or some other entity, you state that you are authorized to grant all licenses set forth in these Terms and to agree to these Terms on behalf of the business or entity. If you are using the Services on behalf of an entity of the Tanzania. Government, you agree to the Amendment to SOSHUB Inc. Terms of Service for Tanzania. Government Users.
+
+                    <br>
+
+                    2. Rights We Grant You
+
+                    <br>
+                    SOSHUB Inc. grants you a personal, worldwide, royalty-free, non-assignable, nonexclusive, revocable, and non-sublicensable license to access and use the Services. This license is for the sole purpose of letting you use and enjoy the Services’ benefits in a way that these Terms and our usage policies, such as our Community Guidelines, allow.
+
+                    <br>
+                    Any software that we provide you may automatically download and install upgrades, updates, or other new features. You may be able to adjust these automatic downloads through your device’s settings.
+
+                    <br>
+                    You may not copy, modify, distribute, sell, or lease any part of our Services, nor may you reverse engineer or attempt to extract the source code of that software, unless laws prohibit these restrictions or you have our written permission to do so.
+
+                    <br>
+                    3. Rights You Grant Us
+
+                    <br>
+                    Many of our Services let you create, upload, post, send, receive, and store content. When you do that, you retain whatever ownership rights in that content you had to begin with. But you grant us a license to use that content. How broad that license is depends on which Services you use and the Settings you have selected.
+
+                    <br>
+                    We call posts that are set to be viewable by Everyone as well as content you submit to crowd-sourced Services, including Our Story, “Public Content.” For all content you submit to the Services other than Public Content, you grant SOSHUB Inc. and our affiliates a worldwide, royalty-free, sublicensable, and transferable license to host, store, use, display, reproduce, modify, adapt, edit, publish, and distribute that content. This license is for the limited purpose of operating, developing, providing, promoting, and improving the Services and researching and developing new ones.
+
+
+                    <br>
+                    Because Public Content is inherently public and chronicles matters of public interest, the license you grant us for this content is broader. For Public Content, you grant SOSHUB Inc., our affiliates, and our business partners all of the same rights you grant for non-Public Content in the previous paragraph, as well as a perpetual license to create derivative works from, promote, exhibit, broadcast, syndicate, publicly perform, and publicly display Public Content in any form and in any and all media or distribution methods (now known or later developed). To the extent it’s necessary, when you appear in, create, upload, post, or send Public Content, you also grant SOSHUB Inc., our affiliates, and our business partners the unrestricted, worldwide, perpetual right and license to use your name, likeness, and voice, including in connection with commercial or sponsored content. This means, among other things, that you will not be entitled to any compensation from SOSHUB Inc., our affiliates, or our business partners if your name, likeness, or voice is conveyed through the Services, either on the SOSHUB application or on one of our business partner’s platforms.
+
+
+                    <br>
+                    For information about how to tailor who can watch your content, please take a look at our Privacy Policy and Support Site.
+
+                    <br>
+                    While we’re not required to do so, we may access, review, screen, and delete your content at any time and for any reason, including to provide and develop the Services or if we think your content violates these Terms. You alone, though, remain responsible for the content you create, upload, post, send, or store through the Service.
+
+                    <br>
+                    The Services may contain advertisements. In consideration for SOSHUB Inc. letting you access and use the Services, you agree that we, our affiliates, and our third-party partners may place advertising on the Services. Because the Services contain content that you and other users provide us, advertising may sometimes appear near your content.
+
+                    <br>
+                    We always love to hear from our users. But if you provide feedback or suggestions, just know that we can use them without compensating you, and without any restriction or obligation to you.
+
+                    <br>
+                    4. The Content of Others
+
+                    <br>
+                    Much of the content on our Services is produced by users, publishers, and other third parties. Whether that content is posted publicly or sent privately, the content is the sole responsibility of the person or organization that submitted it. Although SOSHUB Inc. reserves the right to review or remove all content that appears on the Services, we do not necessarily review all of it. So we cannot—and do not—take responsibility for any content that others provide through the Services.
+
+                    <br>
+                    Through these Terms and our Community Guidelines, we make clear that we do not want the Services put to bad uses. But because we do not review all content, we cannot guarantee that content on the Services, or that our users’ use of our Services, will always conform to our Terms or Guidelines.
+
+                    <br>
+                    5. Privacy
+
+                    <br>
+                    Your privacy matters to us. You can learn how we handle your information when you use our Services by reading our Privacy Policy. We encourage you to give the Privacy Policy a careful look because, by using our Services, you agree that SOSHUB Inc. can collect, use, and share your information consistent with that policy.
+
+                    <br>
+                    6. Respecting Other People’s Rights
+
+                    <br>
+                    SOSHUB Inc. respects the rights of others. And so should you. You therefore may not use the Services, or enable anyone else to use the Services, in a manner that:
+
+                    <br>
+                    violates or infringes someone else’s rights of publicity, privacy, copyright, trademark, or other intellectual property right.
+
+                    <br>
+                    bullies, harasses, or intimidates, defames, spams or solicits our users.
+
+                    <br>
+
+                    You must also respect SOSHUB Inc.’s rights and adhere to the Brand Guidelines and any other brand guidelines published by SOSHUB Inc. You may not do any of the following (or enable anyone else to do so):
+
+                    <br>
+
+                    use branding, logos, icons, user interface elements, designs, photographs, videos, or any other materials used in our Services, except as explicitly allowed by the Brand Guidelines or other brand guidelines published by SOSHUB Inc.
+
+                    <br>
+                    violate or infringe SOSHUB Inc.’s copyrights, trademarks, or other intellectual property rights.
+                    <br>
+
+                    copy, archive, download, upload, distribute, syndicate, broadcast, perform, display, make available, or otherwise use any portion of the Services or the content on the Services except as set forth in these Terms.
+
+                    <br>
+
+                    use the Services, any tools provided by the Services, or any content on the Services for any commercial purposes without our consent.
+
+                    <br>
+
+                    In short: You may not use the Services or the content on the Services in ways that are not authorized by these Terms. Nor may you help anyone else in doing so.
+
+                    <br>
+
+                    7. Respecting Copyright
+                    <br>
+
+                    SOSHUB Inc. honors copyright laws, including the Digital Millennium Copyright Act. We therefore take reasonable steps to expeditiously remove from our Services any infringing material that we become aware of. And if SOSHUB Inc. becomes aware that one of its users has repeatedly infringed copyrights, we will take reasonable steps within our power to terminate the user’s account.
+
+                    <br>
+
+
+                    8. Safety
+                    <br>
+                    We try hard to keep our Services a safe place for all users. But we can’t guarantee it. That’s where you come in. By using the Services, you agree that:
+
+                    <br>
+
+                    You will not use the Services for any purpose that is illegal or prohibited in these Terms.
+                    <br>
+
+                    You will not use any robot, spider, crawler, scraper, or other automated means or interface to access the Services or extract other user’s information.
+
+                    <br>
+
+                    You will not use or develop any third-party applications that interact with the Services or other users’ content or information without our written consent.
+
+                    <br>
+
+                    You will not use the Services in a way that could interfere with, disrupt, negatively affect, or inhibit other users from fully enjoying the Services, or that could damage, disable, overburden, or impair the functioning of the Services.
+
+                    <br>
+
+                    You will not use or attempt to use another user’s account, username, or password without their permission.
+
+                    <br>
+
+                    You will not solicit login credentials from another user.
+                    <br>
+
+                    You will not post content that contains or links to pornography, graphic violence, threats, hate speech, or incitements to violence.
+
+                    <br>
+
+                    You will not upload viruses or other malicious code or otherwise compromise the security of the Services.
+
+                    <br>
+
+                    You will not attempt to circumvent any content-filtering techniques we employ, or attempt to access areas or features of the Services that you are not authorized to access.
+
+                    <br>
+
+                    You will not probe, scan, or test the vulnerability of our Services or any system or network.
+
+                    <br>
+
+                    You will not encourage or promote any activity that violates these Terms.
+
+                    <br>
+
+                    We also care about your safety while using our Services. So do not use our Services in a way that would distract you from obeying traffic or safety laws. For example, never SOSHUB and drive. And never put yourself or others in harm’s way just to capture a SOSHUB.
+
+                    <br>
+
+                    9. Your Account
+                    <br>
+                    You are responsible for any activity that occurs in your SOSHUB account. So it’s important that you keep your account secure. One way to do that is to select a strong password that you don’t use for any other account.
+
+                    <br>
+
+                    By using the Services, you agree that, in addition to exercising common sense:
+
+                    <br>
+
+                    You will not create more than one account for yourself.
+
+                    <br>
+
+                    You will not create another account if we have already disabled your account, unless you have our written permission to do so.
+
+                    <br>
+
+                    You will not buy, sell, rent, or lease access to your SOSHUB account, SOSHUBs, a SOSHUB username, or a friend link without our written permission.
+
+                    <br>
+
+                    You will not share your password.
+
+                    <br>
+
+                    You will not log in or attempt to access the Services through unauthorized third-party applications or clients.
+
+                    <br>
+
+                    If you think that someone has gained access to your account, please immediately reach out to SOSHUB Support.
+
+                    <br>
+
+                    10. Data Charges and Mobile Phones
+
+                    <br>
+                    You are responsible for any mobile charges that you may incur for using our Services, including text-messaging and data charges. If you’re unsure what those charges may be, you should ask your service provider before using the Services.
+
+                    <br>
+
+
+
+                    11. Modifying the Services and Termination
+
+                    <br>
+                    We’re relentlessly improving our Services and creating new ones all the time. That means we may add or remove features, products, or functionalities, and we may also suspend or stop the Services altogether. We may take any of these actions at any time, and when we do, we may not provide you with any notice beforehand.
+
+                    <br>
+
+                    While we hope you remain a lifelong huber, you can terminate these Terms at any time and for any reason by deleting your account.
+
+                    <br>
+
+                    SOSHUB Inc. may also terminate these Terms with you at any time, for any reason, and without advanced notice. That means that we may stop providing you with any Services, or impose new or additional limits on your ability to use our Services. For example, we may deactivate your account due to prolonged inactivity, and we may reclaim your username at any time for any reason.
+
+                    <br>
+
+                    12. Disclaimers
+
+                    <br>
+                    We don't allow contents that promote or help create false or misleading information or claims conveyed through imagery, videos and/or text. We disallow contents determined to promote or perpetuate demonstrably misleading or deceptive imagery, videos and/or text, which may cause harm pertaining to a sensitive event, politics, social issues, or other matters of public concern.
+
+                    <br>
+                    <br>
+                    We try to keep the Services up and running and free of annoyances. But we make no promises that we will succeed.
+
+                    <br>
+
+                    THE SERVICES ARE PROVIDED “AS IS” AND “AS AVAILABLE” AND TO THE EXTENT PERMITTED BY LAW WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. IN ADDITION, WHILE SOSHUB Inc. ATTEMPTS TO PROVIDE A GOOD USER EXPERIENCE, WE DO NOT REPRESENT OR WARRANT THAT:
+                    <br>
+                    (A) THE SERVICES WILL ALWAYS BE SECURE, ERROR-FREE, OR TIMELY;
+                    <br>
+                    (B) THE SERVICES WILL ALWAYS FUNCTION WITHOUT DELAYS, DISRUPTIONS, OR IMPERFECTIONS; OR
+                    <br>
+                    (C) THAT ANY CONTENT, USER CONTENT, OR INFORMATION YOU OBTAIN ON OR THROUGH THE SERVICES WILL BE TIMELY OR ACCURATE.
+
+                    <br>
+
+                    SOSHUB Inc. TAKES NO RESPONSIBILITY AND ASSUMES NO LIABILITY FOR ANY CONTENT THAT YOU, ANOTHER USER, OR A THIRD PARTY CREATES, UPLOADS, POSTS, SENDS, RECEIVES, OR STORES ON OR THROUGH OUR SERVICES. YOU UNDERSTAND AND AGREE THAT YOU MAY BE EXPOSED TO CONTENT THAT MIGHT BE OFFENSIVE, ILLEGAL, MISLEADING, OR OTHERWISE INAPPROPRIATE, NONE OF WHICH SOSHUB Inc. WILL BE RESPONSIBLE FOR.
+
+
+                    <br>
+
+                    13. Final Terms
+
+                    <br>
+                    These Terms (together with any additional terms applicable to specific Services you use) make up the entire agreement between you and SOSHUB Inc., and supersede any prior agreements.
+
+                    <br>
+
+                    These Terms do not create or confer any third-party beneficiary rights.
+
+                    <br>
+
+                    If we do not enforce a provision in these Terms, it will not be considered a waiver.
+
+                    <br>
+
+                    We reserve all rights not expressly granted to you, we also reserve the right to update these terms while keeping you informed of the changes.
+
+                    <br>
+
+
+                    You may not transfer any of your rights or obligations under these Terms without our consent.
+
+                    <br>
+
+                    <p class="padding-top-half">
+                        Contact Us
+
+                        <br>
+                        SOSHUB Inc. welcomes comments, questions, concerns, or suggestions. Please contact us by visiting https://support.SOSHUB.co/.
+
+                    </p>
 </div>
 
-<!-- Promo Section "Statistics" -->
-<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">14+</span>
-    <br>Partners
-  </div>
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">55+</span>
-    <br>Projects Done
-  </div>
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">89+</span>
-    <br>Happy Clients
-  </div>
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">150+</span>
-    <br>Meetings
-  </div>
-</div>
-
-
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
-
-<!-- Skills Section -->
-<div class="w3-container w3-light-grey w3-padding-64">
-  <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <h3>Our Skills.</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
-      tempor incididunt ut labore et dolore.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
-      tempor incididunt ut labore et dolore.</p>
-    </div>
-    <div class="w3-col m6">
-      <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Photography</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
-      </div>
-      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Web Design</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
-      </div>
-      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Photoshop</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
-      </div>
-    </div>
-  </div>
-</div>
 
 <!-- Pricing Section -->
-<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
-  <h3>PRICING</h3>
-  <p class="w3-large">Choose a pricing plan that fits your needs.</p>
+<div class="w3-container w3-center w3-black" style="padding:128px 16px" id="privacy">
+  <h3>Privacy Policy</h3>
+  <p class="w3-large">Effective: February 28, 2021</p>
   <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-third w3-section">
-      <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
-        <li class="w3-padding-16"><b>10GB</b> Storage</li>
-        <li class="w3-padding-16"><b>10</b> Emails</li>
-        <li class="w3-padding-16"><b>10</b> Domains</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide">$ 10</h2>
-          <span class="w3-opacity">per month</span>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
-        </li>
-      </ul>
-    </div>
-    <div class="w3-third">
-      <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-red w3-xlarge w3-padding-48">Pro</li>
-        <li class="w3-padding-16"><b>25GB</b> Storage</li>
-        <li class="w3-padding-16"><b>25</b> Emails</li>
-        <li class="w3-padding-16"><b>25</b> Domains</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide">$ 25</h2>
-          <span class="w3-opacity">per month</span>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
-        </li>
-      </ul>
-    </div>
-    <div class="w3-third w3-section">
-      <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
-        <li class="w3-padding-16"><b>50GB</b> Storage</li>
-        <li class="w3-padding-16"><b>50</b> Emails</li>
-        <li class="w3-padding-16"><b>50</b> Domains</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide">$ 50</h2>
-          <span class="w3-opacity">per month</span>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
-        </li>
-      </ul>
-    </div>
+
+
+                    SOSHUB Inc. is a social-network and hubs company. Our products and services—including SOSHUB, advertising, and others that link to this Privacy Policy — bring you closer to the people of your kind to share similar values and to inspire one another!
+
+                    When you use these services, you’ll share some information with us. So we want to be upfront about the information we collect, how we use it, whom we share it with, and the controls we give you to access, update, and delete your information.
+
+                    That’s why we’ve written this Privacy Policy. And it’s why we’ve tried to write it in a way that’s blissfully free of the legalese that often clouds these documents. Of course, if you still have questions about anything in our Privacy Policy, just contact us.
+
+                    You should read our entire Privacy Policy, but when you only have a few minutes or want to remember something later on, you can always take a look at this summary—so you can review some of the basics in just a few minutes.
+    
   </div>
 </div>
 
@@ -291,11 +451,11 @@ body, html {
   <h3 class="w3-center">CONTACT</h3>
   <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
   <div style="margin-top:48px">
-    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Dar es Salaam, TZ</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +255 688 780 076</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: soshubgroup@gmail.com</p>
     <br>
-    <form action="/action_page.php" target="_blank">
+    <!-- <form action="/action_page.php" target="_blank">
       <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
       <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
       <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
@@ -305,9 +465,9 @@ body, html {
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
       </p>
-    </form>
+    </form> -->
     <!-- Image of location/map -->
-    <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+    <!-- <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px"> -->
   </div>
 </div>
 
